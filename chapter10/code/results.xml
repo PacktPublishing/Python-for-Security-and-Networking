@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat Feb 18 18:02:43 2023 as: nmap -sV -&#45;script=vulners -v -p 8080 -oX results.xml 120.26.143.51 -->
+<nmaprun scanner="nmap" args="nmap -sV -&#45;script=vulners -v -p 8080 -oX results.xml 120.26.143.51" start="1676739763" startstr="Sat Feb 18 18:02:43 2023" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="8080"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676739763"/>
+<taskend task="NSE" time="1676739763"/>
+<taskbegin task="NSE" time="1676739763"/>
+<taskend task="NSE" time="1676739763"/>
+<taskbegin task="Ping Scan" time="1676739763"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="120.26.143.51" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1676739763" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676739763"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676739763"/>
+<taskbegin task="Connect Scan" time="1676739763"/>
+<taskend task="Connect Scan" time="1676739764" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676739764"/>
+<taskend task="Service scan" time="1676739770" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676739770"/>
+<taskend task="NSE" time="1676739771"/>
+<taskbegin task="NSE" time="1676739771"/>
+<taskend task="NSE" time="1676739772"/>
+<host starttime="1676739763" endtime="1676739772"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="120.26.143.51" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache Tomcat" version="8.5.83" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat:8.5.83</cpe></service><script id="vulners" output="&#xa;  cpe:/a:apache:tomcat:8.5.83: &#xa;    &#x9;TOMCAT:0DBA25EA40A6FEBF5FD9039D7F60718E&#x9;10.0&#x9;https://vulners.com/tomcat/TOMCAT:0DBA25EA40A6FEBF5FD9039D7F60718E&#xa;    &#x9;SSV:92553&#x9;10.0&#x9;https://vulners.com/seebug/SSV:92553&#x9;*EXPLOIT*&#xa;    &#x9;TOMCAT:E4520A0C2F785FBF22985309FA3E3B08&#x9;9.3&#x9;https://vulners.com/tomcat/TOMCAT:E4520A0C2F785FBF22985309FA3E3B08&#xa;    &#x9;PACKETSTORM:153506&#x9;9.3&#x9;https://vulners.com/packetstorm/PACKETSTORM:153506&#x9;*EXPLOIT*&#xa;    &#x9;F3523D8D-36CF-530B-85DD-013275F7D552&#x9;9.3&#x9;https://vulners.com/githubexploit/F3523D8D-36CF-530B-85DD-013275F7D552&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:47073&#x9;9.3&#x9;https://vulners.com/exploitdb/EDB-ID:47073&#x9;*EXPLOIT*&#xa;    &#x9;DB8D8364-06FB-55E8-934E-C013B00821B5&#x9;9.3&#x9;https://vulners.com/githubexploit/DB8D8364-06FB-55E8-934E-C013B00821B5&#x9;*EXPLOIT*&#xa;    &#x9;C9BC03B4-078B-5F3C-815A-98E0F8AAA33B&#x9;9.3&#x9;https://vulners.com/githubexploit/C9BC03B4-078B-5F3C-815A-98E0F8AAA33B&#x9;*EXPLOIT*&#xa;    &#x9;3A26C086-A741-585B-8FA9-F90780E2CA16&#x9;9.3&#x9;https://vulners.com/githubexploit/3A26C086-A741-585B-8FA9-F90780E2CA16&#x9;*EXPLOIT*&#xa;    &#x9;24B7AC9D-6C5E-545B-97E4-F20711FFCF8F&#x9;9.3&#x9;https://vulners.com/githubexploit/24B7AC9D-6C5E-545B-97E4-F20711FFCF8F&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-32925&#x9;9.3&#x9;https://vulners.com/zdt/1337DAY-ID-32925&#x9;*EXPLOIT*&#xa;    &#x9;TOMCAT:7E8B1837DB1B24489FB7CEAE24C18E30&#x9;7.8&#x9;https://vulners.com/tomcat/TOMCAT:7E8B1837DB1B24489FB7CEAE24C18E30&#xa;    &#x9;TOMCAT:ECCF6A4DAA30CE7FE974F228B3888E80&#x9;7.5&#x9;https://vulners.com/tomcat/TOMCAT:ECCF6A4DAA30CE7FE974F228B3888E80&#xa;    &#x9;TOMCAT:5240E60E42AA59815FABAFAFBE8E089C&#x9;7.5&#x9;https://vulners.com/tomcat/TOMCAT:5240E60E42AA59815FABAFAFBE8E089C&#xa;    &#x9;TOMCAT:19DF5AAB3C67D0C43C1BB8ACA9B2D28A&#x9;7.5&#x9;https://vulners.com/tomcat/TOMCAT:19DF5AAB3C67D0C43C1BB8ACA9B2D28A&#xa;    &#x9;TOMCAT:15FF6DF1B5DE765DF9A478C8E8034759&#x9;7.5&#x9;https://vulners.com/tomcat/TOMCAT:15FF6DF1B5DE765DF9A478C8E8034759&#xa;    &#x9;C3759325-98F9-5F0F-98F5-6EAE787CE3FB&#x9;7.5&#x9;https://vulners.com/githubexploit/C3759325-98F9-5F0F-98F5-6EAE787CE3FB&#x9;*EXPLOIT*&#xa;    &#x9;8DB9E338-4180-562E-ABD8-FB97CA704213&#x9;7.5&#x9;https://vulners.com/githubexploit/8DB9E338-4180-562E-ABD8-FB97CA704213&#x9;*EXPLOIT*&#xa;    &#x9;85F98E2E-7D50-53DE-9EFC-3BE28E0E8C53&#x9;7.5&#x9;https://vulners.com/githubexploit/85F98E2E-7D50-53DE-9EFC-3BE28E0E8C53&#x9;*EXPLOIT*&#xa;    &#x9;848A368C-4CEE-5324-BB29-1432453E3138&#x9;7.5&#x9;https://vulners.com/githubexploit/848A368C-4CEE-5324-BB29-1432453E3138&#x9;*EXPLOIT*&#xa;    &#x9;7130E91B-2DF2-565E-ADE8-4C60D45E5A4D&#x9;7.5&#x9;https://vulners.com/githubexploit/7130E91B-2DF2-565E-ADE8-4C60D45E5A4D&#x9;*EXPLOIT*&#xa;    &#x9;6E0425A5-AA6D-5FC6-9F8C-415345C30DD5&#x9;7.5&#x9;https://vulners.com/githubexploit/6E0425A5-AA6D-5FC6-9F8C-415345C30DD5&#x9;*EXPLOIT*&#xa;    &#x9;1638D72C-F3EB-52FB-B16F-5F1996A67C0A&#x9;7.5&#x9;https://vulners.com/githubexploit/1638D72C-F3EB-52FB-B16F-5F1996A67C0A&#x9;*EXPLOIT*&#xa;    &#x9;140968B5-6F8E-57C6-8A61-831D5FB78836&#x9;7.5&#x9;https://vulners.com/githubexploit/140968B5-6F8E-57C6-8A61-831D5FB78836&#x9;*EXPLOIT*&#xa;    &#x9;0B52DD25-4874-54EB-8213-8FA10B0966A3&#x9;7.5&#x9;https://vulners.com/githubexploit/0B52DD25-4874-54EB-8213-8FA10B0966A3&#x9;*EXPLOIT*&#xa;    &#x9;TOMCAT:36AC55F275AD6FE594625DBE3DFC1A1C&#x9;6.8&#x9;https://vulners.com/tomcat/TOMCAT:36AC55F275AD6FE594625DBE3DFC1A1C&#xa;    &#x9;SSV:96624&#x9;6.8&#x9;https://vulners.com/seebug/SSV:96624&#x9;*EXPLOIT*&#xa;    &#x9;SSV:96562&#x9;6.8&#x9;https://vulners.com/seebug/SSV:96562&#x9;*EXPLOIT*&#xa;    &#x9;SSV:92678&#x9;6.8&#x9;https://vulners.com/seebug/SSV:92678&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:31B3E3F4C5EABC55DF384007CB11320A&#x9;6.8&#x9;https://vulners.com/exploitpack/EXPLOITPACK:31B3E3F4C5EABC55DF384007CB11320A&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:28422BD346C315BD9B02E4A18C1B9B0A&#x9;6.8&#x9;https://vulners.com/exploitpack/EXPLOITPACK:28422BD346C315BD9B02E4A18C1B9B0A&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:1FA29992905DF6DC8A86680F66930B75&#x9;6.8&#x9;https://vulners.com/exploitpack/EXPLOITPACK:1FA29992905DF6DC8A86680F66930B75&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:42966&#x9;6.8&#x9;https://vulners.com/exploitdb/EDB-ID:42966&#x9;*EXPLOIT*&#xa;    &#x9;E-627&#x9;6.8&#x9;https://vulners.com/dsquare/E-627&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-28780&#x9;6.8&#x9;https://vulners.com/zdt/1337DAY-ID-28780&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-28759&#x9;6.8&#x9;https://vulners.com/zdt/1337DAY-ID-28759&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-27485&#x9;6.8&#x9;https://vulners.com/zdt/1337DAY-ID-27485&#x9;*EXPLOIT*&#xa;    &#x9;TOMCAT:9847C725903157955C24006319A678BF&#x9;6.4&#x9;https://vulners.com/tomcat/TOMCAT:9847C725903157955C24006319A678BF&#xa;    &#x9;TOMCAT:790F7EF00EBD814D5B55BBA9ADFAB91D&#x9;6.4&#x9;https://vulners.com/tomcat/TOMCAT:790F7EF00EBD814D5B55BBA9ADFAB91D&#xa;    &#x9;EDB-ID:47892&#x9;6.4&#x9;https://vulners.com/exploitdb/EDB-ID:47892&#x9;*EXPLOIT*&#xa;    &#x9;TOMCAT:B7EB6B23524A2491A4E8200F0D520A47&#x9;5.8&#x9;https://vulners.com/tomcat/TOMCAT:B7EB6B23524A2491A4E8200F0D520A47&#xa;    &#x9;TOMCAT:A66B656C929B7FB0E855CBC84E3CC1C3&#x9;5.1&#x9;https://vulners.com/tomcat/TOMCAT:A66B656C929B7FB0E855CBC84E3CC1C3&#xa;    &#x9;VERACODE:35506&#x9;5.0&#x9;https://vulners.com/veracode/VERACODE:35506&#xa;    &#x9;TOMCAT:EFE5126874D9D8FC03439FD8E2D254FB&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:EFE5126874D9D8FC03439FD8E2D254FB&#xa;    &#x9;TOMCAT:E76617B2A121AAAE8F7420BCA50A252C&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:E76617B2A121AAAE8F7420BCA50A252C&#xa;    &#x9;TOMCAT:D3D93576ACEA30F0105FC0FE43E2BF2B&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:D3D93576ACEA30F0105FC0FE43E2BF2B&#xa;    &#x9;TOMCAT:BAAFFB46A35FA23A4961B3B00F383DC9&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:BAAFFB46A35FA23A4961B3B00F383DC9&#xa;    &#x9;TOMCAT:A2A41E288752906867E2BBE07542F21C&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:A2A41E288752906867E2BBE07542F21C&#xa;    &#x9;TOMCAT:9B1DDBF633DAFBB1A5BECFE202020044&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:9B1DDBF633DAFBB1A5BECFE202020044&#xa;    &#x9;TOMCAT:72A659F35396F865D9A18EB5614CF486&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:72A659F35396F865D9A18EB5614CF486&#xa;    &#x9;TOMCAT:6C657C163FFE0205CE2090ED59CA418E&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:6C657C163FFE0205CE2090ED59CA418E&#xa;    &#x9;TOMCAT:664B7FB043CE1DA3FFE3E5FB72DB8E6D&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:664B7FB043CE1DA3FFE3E5FB72DB8E6D&#xa;    &#x9;TOMCAT:3391E0AAF29D2396504D34AA4E6E9211&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:3391E0AAF29D2396504D34AA4E6E9211&#xa;    &#x9;TOMCAT:308C435A018F4613018CC17649FC7EC5&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:308C435A018F4613018CC17649FC7EC5&#xa;    &#x9;TOMCAT:1F39B90C2307C93F80215822B99CB2B5&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:1F39B90C2307C93F80215822B99CB2B5&#xa;    &#x9;TOMCAT:1EC0F1D5E7FF84CFCAC4566485FFCAC6&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:1EC0F1D5E7FF84CFCAC4566485FFCAC6&#xa;    &#x9;TOMCAT:189A39640FA522088C95784425266AF0&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:189A39640FA522088C95784425266AF0&#xa;    &#x9;TOMCAT:170C5463530016BE51E9DB8856C44B69&#x9;5.0&#x9;https://vulners.com/tomcat/TOMCAT:170C5463530016BE51E9DB8856C44B69&#xa;    &#x9;SSV:99316&#x9;5.0&#x9;https://vulners.com/seebug/SSV:99316&#x9;*EXPLOIT*&#xa;    &#x9;SSV:92677&#x9;5.0&#x9;https://vulners.com/seebug/SSV:92677&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:155873&#x9;5.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:155873&#x9;*EXPLOIT*&#xa;    &#x9;F7C2EA22-B929-56C5-81EC-916AD38EE791&#x9;5.0&#x9;https://vulners.com/githubexploit/F7C2EA22-B929-56C5-81EC-916AD38EE791&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:093A394113BB59F99F2891210E4279F0&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:093A394113BB59F99F2891210E4279F0&#x9;*EXPLOIT*&#xa;    &#x9;93611D7A-3405-55F6-A543-E1691042CC2D&#x9;5.0&#x9;https://vulners.com/githubexploit/93611D7A-3405-55F6-A543-E1691042CC2D&#x9;*EXPLOIT*&#xa;    &#x9;3E0978AA-B510-55A3-A1C8-E122CB347507&#x9;5.0&#x9;https://vulners.com/githubexploit/3E0978AA-B510-55A3-A1C8-E122CB347507&#x9;*EXPLOIT*&#xa;    &#x9;18F5237C-DCAC-5831-AED6-F0880A11DFF2&#x9;5.0&#x9;https://vulners.com/githubexploit/18F5237C-DCAC-5831-AED6-F0880A11DFF2&#x9;*EXPLOIT*&#xa;    &#x9;TOMCAT:EB85C74A2FFEC0BC4964D6CF659D2F1D&#x9;4.4&#x9;https://vulners.com/tomcat/TOMCAT:EB85C74A2FFEC0BC4964D6CF659D2F1D&#xa;    &#x9;TOMCAT:9B658D22C08634C8C17F1EFEE3366D4D&#x9;4.4&#x9;https://vulners.com/tomcat/TOMCAT:9B658D22C08634C8C17F1EFEE3366D4D&#xa;    &#x9;TOMCAT:134FFF2A5E889835054EC92E557C984D&#x9;4.4&#x9;https://vulners.com/tomcat/TOMCAT:134FFF2A5E889835054EC92E557C984D&#xa;    &#x9;F60737C1-A24B-51C1-AE8D-73A65C778FFF&#x9;4.4&#x9;https://vulners.com/githubexploit/F60737C1-A24B-51C1-AE8D-73A65C778FFF&#x9;*EXPLOIT*&#xa;    &#x9;E95D9A0E-E9DE-5D95-9879-E07C0257318C&#x9;4.4&#x9;https://vulners.com/githubexploit/E95D9A0E-E9DE-5D95-9879-E07C0257318C&#x9;*EXPLOIT*&#xa;    &#x9;D5CBA0E2-A4B0-52CE-B93B-F433CE8662DA&#x9;4.4&#x9;https://vulners.com/githubexploit/D5CBA0E2-A4B0-52CE-B93B-F433CE8662DA&#x9;*EXPLOIT*&#xa;    &#x9;C4EDB405-454C-5160-9A99-21A930740C3F&#x9;4.4&#x9;https://vulners.com/githubexploit/C4EDB405-454C-5160-9A99-21A930740C3F&#x9;*EXPLOIT*&#xa;    &#x9;B0BA17F5-F171-5C97-9F6C-D5F38B5B64F5&#x9;4.4&#x9;https://vulners.com/githubexploit/B0BA17F5-F171-5C97-9F6C-D5F38B5B64F5&#x9;*EXPLOIT*&#xa;    &#x9;92CE6110-40F8-5FE5-909B-BE6B59186578&#x9;4.4&#x9;https://vulners.com/githubexploit/92CE6110-40F8-5FE5-909B-BE6B59186578&#x9;*EXPLOIT*&#xa;    &#x9;743F51FB-8BF4-5425-AEFA-10B2A14C8F3B&#x9;4.4&#x9;https://vulners.com/githubexploit/743F51FB-8BF4-5425-AEFA-10B2A14C8F3B&#x9;*EXPLOIT*&#xa;    &#x9;5602A60A-886A-598C-99B3-EE2E820506AD&#x9;4.4&#x9;https://vulners.com/githubexploit/5602A60A-886A-598C-99B3-EE2E820506AD&#x9;*EXPLOIT*&#xa;    &#x9;504D019A-423C-50A0-9677-93192F0ECDFC&#x9;4.4&#x9;https://vulners.com/githubexploit/504D019A-423C-50A0-9677-93192F0ECDFC&#x9;*EXPLOIT*&#xa;    &#x9;4278B435-D22E-57E8-ABC4-639BAAFA6FC9&#x9;4.4&#x9;https://vulners.com/githubexploit/4278B435-D22E-57E8-ABC4-639BAAFA6FC9&#x9;*EXPLOIT*&#xa;    &#x9;25B0D3BA-0039-5AAB-97E1-07A88FE23CC1&#x9;4.4&#x9;https://vulners.com/githubexploit/25B0D3BA-0039-5AAB-97E1-07A88FE23CC1&#x9;*EXPLOIT*&#xa;    &#x9;14CD7401-C309-52B2-B4EE-AD54900F0455&#x9;4.4&#x9;https://vulners.com/githubexploit/14CD7401-C309-52B2-B4EE-AD54900F0455&#x9;*EXPLOIT*&#xa;    &#x9;VERACODE:36106&#x9;4.3&#x9;https://vulners.com/veracode/VERACODE:36106&#xa;    &#x9;TOMCAT:E9A49D97853081D12941EC17E5C2C654&#x9;4.3&#x9;https://vulners.com/tomcat/TOMCAT:E9A49D97853081D12941EC17E5C2C654&#xa;    &#x9;TOMCAT:B8F5059D8B59B7ED231B7109C5F8A6D8&#x9;4.3&#x9;https://vulners.com/tomcat/TOMCAT:B8F5059D8B59B7ED231B7109C5F8A6D8&#xa;    &#x9;TOMCAT:AF4A6EA17F8CF3DB9FD06E6A4991A066&#x9;4.3&#x9;https://vulners.com/tomcat/TOMCAT:AF4A6EA17F8CF3DB9FD06E6A4991A066&#xa;    &#x9;TOMCAT:2680AEFDC6753CA8A86BDC720F332BF2&#x9;4.3&#x9;https://vulners.com/tomcat/TOMCAT:2680AEFDC6753CA8A86BDC720F332BF2&#xa;    &#x9;PACKETSTORM:163457&#x9;4.3&#x9;https://vulners.com/packetstorm/PACKETSTORM:163457&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:163456&#x9;4.3&#x9;https://vulners.com/packetstorm/PACKETSTORM:163456&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:50119&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:50119&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:50118&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:50118&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-36546&#x9;4.3&#x9;https://vulners.com/zdt/1337DAY-ID-36546&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-36545&#x9;4.3&#x9;https://vulners.com/zdt/1337DAY-ID-36545&#x9;*EXPLOIT*&#xa;    &#x9;TOMCAT:F0049A2F4586A81E86FFD36E3616FCA3&#x9;4.0&#x9;https://vulners.com/tomcat/TOMCAT:F0049A2F4586A81E86FFD36E3616FCA3&#xa;    &#x9;TOMCAT:C0F3A91E4159E4828BD7AADAC9AC660E&#x9;0.0&#x9;https://vulners.com/tomcat/TOMCAT:C0F3A91E4159E4828BD7AADAC9AC660E&#xa;    &#x9;TOMCAT:64ECCFD3FBFA2E22F1F726396EEF5DDB&#x9;0.0&#x9;https://vulners.com/tomcat/TOMCAT:64ECCFD3FBFA2E22F1F726396EEF5DDB&#xa;    &#x9;TOMCAT:4066E0D070FE03B4542E1F4DC57DDD66&#x9;0.0&#x9;https://vulners.com/tomcat/TOMCAT:4066E0D070FE03B4542E1F4DC57DDD66&#xa;    &#x9;SSV:97149&#x9;0.0&#x9;https://vulners.com/seebug/SSV:97149&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:144591&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:144591&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:144557&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:144557&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:141920&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:141920&#x9;*EXPLOIT*&#xa;    &#x9;MSF:EXPLOIT-WINDOWS-HTTP-TOMCAT_CGI_CMDLINEARGS-&#x9;0.0&#x9;https://vulners.com/metasploit/MSF:EXPLOIT-WINDOWS-HTTP-TOMCAT_CGI_CMDLINEARGS-&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2022-45143&#x9;0.0&#x9;https://vulners.com/cve/CVE-2022-45143&#xa;    &#x9;CVE-2022-42252&#x9;0.0&#x9;https://vulners.com/cve/CVE-2022-42252"><table key="cpe:/a:apache:tomcat:8.5.83">
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="id">TOMCAT:0DBA25EA40A6FEBF5FD9039D7F60718E</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="id">SSV:92553</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">TOMCAT:E4520A0C2F785FBF22985309FA3E3B08</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">PACKETSTORM:153506</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">F3523D8D-36CF-530B-85DD-013275F7D552</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">EDB-ID:47073</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">DB8D8364-06FB-55E8-934E-C013B00821B5</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">C9BC03B4-078B-5F3C-815A-98E0F8AAA33B</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">3A26C086-A741-585B-8FA9-F90780E2CA16</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">24B7AC9D-6C5E-545B-97E4-F20711FFCF8F</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">9.3</elem>
+<elem key="id">1337DAY-ID-32925</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="id">TOMCAT:7E8B1837DB1B24489FB7CEAE24C18E30</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">TOMCAT:ECCF6A4DAA30CE7FE974F228B3888E80</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">TOMCAT:5240E60E42AA59815FABAFAFBE8E089C</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">TOMCAT:19DF5AAB3C67D0C43C1BB8ACA9B2D28A</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">TOMCAT:15FF6DF1B5DE765DF9A478C8E8034759</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">C3759325-98F9-5F0F-98F5-6EAE787CE3FB</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">8DB9E338-4180-562E-ABD8-FB97CA704213</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">85F98E2E-7D50-53DE-9EFC-3BE28E0E8C53</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">848A368C-4CEE-5324-BB29-1432453E3138</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">7130E91B-2DF2-565E-ADE8-4C60D45E5A4D</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">6E0425A5-AA6D-5FC6-9F8C-415345C30DD5</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">1638D72C-F3EB-52FB-B16F-5F1996A67C0A</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">140968B5-6F8E-57C6-8A61-831D5FB78836</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">0B52DD25-4874-54EB-8213-8FA10B0966A3</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">TOMCAT:36AC55F275AD6FE594625DBE3DFC1A1C</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">SSV:96624</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">SSV:96562</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">SSV:92678</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">EXPLOITPACK:31B3E3F4C5EABC55DF384007CB11320A</elem>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">EXPLOITPACK:28422BD346C315BD9B02E4A18C1B9B0A</elem>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">EXPLOITPACK:1FA29992905DF6DC8A86680F66930B75</elem>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">EDB-ID:42966</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">E-627</elem>
+<elem key="type">dsquare</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">1337DAY-ID-28780</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">1337DAY-ID-28759</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">1337DAY-ID-27485</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="id">TOMCAT:9847C725903157955C24006319A678BF</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="id">TOMCAT:790F7EF00EBD814D5B55BBA9ADFAB91D</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">6.4</elem>
+<elem key="id">EDB-ID:47892</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.8</elem>
+<elem key="id">TOMCAT:B7EB6B23524A2491A4E8200F0D520A47</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="id">TOMCAT:A66B656C929B7FB0E855CBC84E3CC1C3</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">VERACODE:35506</elem>
+<elem key="type">veracode</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:EFE5126874D9D8FC03439FD8E2D254FB</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:E76617B2A121AAAE8F7420BCA50A252C</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:D3D93576ACEA30F0105FC0FE43E2BF2B</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:BAAFFB46A35FA23A4961B3B00F383DC9</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:A2A41E288752906867E2BBE07542F21C</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:9B1DDBF633DAFBB1A5BECFE202020044</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:72A659F35396F865D9A18EB5614CF486</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:6C657C163FFE0205CE2090ED59CA418E</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:664B7FB043CE1DA3FFE3E5FB72DB8E6D</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:3391E0AAF29D2396504D34AA4E6E9211</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:308C435A018F4613018CC17649FC7EC5</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:1F39B90C2307C93F80215822B99CB2B5</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:1EC0F1D5E7FF84CFCAC4566485FFCAC6</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:189A39640FA522088C95784425266AF0</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">TOMCAT:170C5463530016BE51E9DB8856C44B69</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">SSV:99316</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">SSV:92677</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">PACKETSTORM:155873</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">F7C2EA22-B929-56C5-81EC-916AD38EE791</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">EXPLOITPACK:093A394113BB59F99F2891210E4279F0</elem>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">93611D7A-3405-55F6-A543-E1691042CC2D</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">3E0978AA-B510-55A3-A1C8-E122CB347507</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">18F5237C-DCAC-5831-AED6-F0880A11DFF2</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">TOMCAT:EB85C74A2FFEC0BC4964D6CF659D2F1D</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">TOMCAT:9B658D22C08634C8C17F1EFEE3366D4D</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">TOMCAT:134FFF2A5E889835054EC92E557C984D</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">F60737C1-A24B-51C1-AE8D-73A65C778FFF</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">E95D9A0E-E9DE-5D95-9879-E07C0257318C</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">D5CBA0E2-A4B0-52CE-B93B-F433CE8662DA</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">C4EDB405-454C-5160-9A99-21A930740C3F</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">B0BA17F5-F171-5C97-9F6C-D5F38B5B64F5</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">92CE6110-40F8-5FE5-909B-BE6B59186578</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">743F51FB-8BF4-5425-AEFA-10B2A14C8F3B</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">5602A60A-886A-598C-99B3-EE2E820506AD</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">504D019A-423C-50A0-9677-93192F0ECDFC</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">4278B435-D22E-57E8-ABC4-639BAAFA6FC9</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">25B0D3BA-0039-5AAB-97E1-07A88FE23CC1</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">14CD7401-C309-52B2-B4EE-AD54900F0455</elem>
+<elem key="type">githubexploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">VERACODE:36106</elem>
+<elem key="type">veracode</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">TOMCAT:E9A49D97853081D12941EC17E5C2C654</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">TOMCAT:B8F5059D8B59B7ED231B7109C5F8A6D8</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">TOMCAT:AF4A6EA17F8CF3DB9FD06E6A4991A066</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">TOMCAT:2680AEFDC6753CA8A86BDC720F332BF2</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">PACKETSTORM:163457</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">PACKETSTORM:163456</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">EDB-ID:50119</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">EDB-ID:50118</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">1337DAY-ID-36546</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">1337DAY-ID-36545</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">4.0</elem>
+<elem key="id">TOMCAT:F0049A2F4586A81E86FFD36E3616FCA3</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">TOMCAT:C0F3A91E4159E4828BD7AADAC9AC660E</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">TOMCAT:64ECCFD3FBFA2E22F1F726396EEF5DDB</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">TOMCAT:4066E0D070FE03B4542E1F4DC57DDD66</elem>
+<elem key="type">tomcat</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">SSV:97149</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">PACKETSTORM:144591</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">PACKETSTORM:144557</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">PACKETSTORM:141920</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">MSF:EXPLOIT-WINDOWS-HTTP-TOMCAT_CGI_CMDLINEARGS-</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">CVE-2022-45143</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">0.0</elem>
+<elem key="id">CVE-2022-42252</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="237588" rttvar="178921" to="953272"/>
+</host>
+<taskbegin task="NSE" time="1676739772"/>
+<taskend task="NSE" time="1676739772"/>
+<taskbegin task="NSE" time="1676739772"/>
+<taskend task="NSE" time="1676739772"/>
+<runstats><finished time="1676739772" timestr="Sat Feb 18 18:02:52 2023" summary="Nmap done at Sat Feb 18 18:02:52 2023; 1 IP address (1 host up) scanned in 9.40 seconds" elapsed="9.40" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

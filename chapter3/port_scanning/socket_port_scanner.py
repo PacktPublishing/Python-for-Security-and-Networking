@@ -9,8 +9,8 @@ remoteServer    = input("Enter a remote host to scan: ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 print("Please enter the range of ports you would like to scan on the machine")
-startPort    = input("Enter a start port: ")
-endPort    = input("Enter a end port: ")
+startPort    = input("Enter start port: ")
+endPort    = input("Enter end port: ")
 
 print("Please wait, scanning remote host", remoteServerIP)
 

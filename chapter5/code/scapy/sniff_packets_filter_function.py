@@ -8,6 +8,12 @@ def sniffPackets(packet):
 		print("[+] New Packet: {src} -> {dst}".format(src=packet_src, dst=packet_dst))
 
 if __name__ == '__main__':
-	sniff(iface="wlo1",filter="tcp and (port 443 or port 80)",prn=sniffPackets)
+	interfaces = get_if_list()
+	print(interfaces)
+	for interface in interfaces:
+		print(interface)
+	interface = input("Enter interface name to sniff: ")
+	print("Sniffing interface " + interface)
+	sniff(iface=interface,filter="tcp and (port 443 or port 80)",prn=sniffPackets)
 
 

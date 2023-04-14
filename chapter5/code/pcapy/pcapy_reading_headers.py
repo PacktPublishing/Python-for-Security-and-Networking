@@ -3,7 +3,16 @@
 import pcapy
 from struct import *
 
-cap = pcapy.open_live("wlo1", 65536, 1, 0)
+interfaces = pcapy.findalldevs() 
+
+print("Available interfaces are :") 
+
+for interface in interfaces: 
+	print(interface)	
+
+interface = input("Enter interface name to sniff : ") 
+
+cap = pcapy.open_live(interface, 65536, 1, 0)
 
 while True:
     (header,payload) = cap.next()

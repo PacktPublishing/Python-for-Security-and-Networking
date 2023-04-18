@@ -1,7 +1,7 @@
 import dns.resolver
 
 def main(domain):
-    records = ['A','AAAA','NS','SOA','MX','TXT','CNAME']
+    records = ['A','AAAA','NS','SOA','MX','TXT','CNAME','PTR']
     for record in records:
         try:
             responses = dns.resolver.resolve(domain, record)

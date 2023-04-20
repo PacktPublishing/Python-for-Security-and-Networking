@@ -12,7 +12,7 @@ def count_dns_request(packet):
 
 def main():
     print("[*] Executing DNS sniffer...")
-
+    print("[*] Stop the program with Ctrl+C and view the results...") 
     try:
         a = sniff(filter="udp and port 53", prn=count_dns_request, count=500)
     except KeyboardInterrupt:

@@ -1,4 +1,5 @@
 import socket, paramiko, threading, sys 
+import getpass
 if len(sys.argv) != 3: 
     print("usage SSH_Server.py <interface> <port>") 
     exit() 
@@ -23,8 +24,10 @@ try:
     print("Input connection")
     transport = paramiko.Transport(client) 
     transport.load_server_moduli() 
-    server_key = paramiko.RSAKey(filename='/home/linux/.ssh/id_rsa',password='LINUX') 
-    transport.add_server_key(server_key) 
+    server_key = paramiko.RSAKey(filename='/home/linux/.ssh/id_rsa') 
+    key_password = getpass.getpass(prompt='Enter password for RSA key file: ')
+    server_key.from_private_key_file('/home/linux/.ssh/id_rsa', password=key_password)
+    transport.add_server_key(server_key)
     server = SSH_Server() 
     transport.start_server(server=server) 
     channel = transport.accept(20) 

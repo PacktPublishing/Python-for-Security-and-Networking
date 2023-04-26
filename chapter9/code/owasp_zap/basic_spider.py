@@ -2,8 +2,10 @@
 import time
 from zapv2 import ZAPv2
 
+apiKey='<YOUR_API_KEY>'
+
 target = 'http://testphp.vulnweb.com/'
-zap = ZAPv2()
+zap = ZAPv2(apikey=apiKey)
 
 print('Spidering target {}'.format(target))
 scanID = zap.spider.scan(target)

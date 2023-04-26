@@ -3,8 +3,10 @@ import time
 from pprint import pprint
 from zapv2 import ZAPv2
 
+apiKey='<YOUR_API_KEY>'
+
 target = 'http://testphp.vulnweb.com/'
-zap = ZAPv2()
+zap = ZAPv2(apikey=apiKey)
 
 print('Accessing target {}'.format(target))
 zap.urlopen(target)

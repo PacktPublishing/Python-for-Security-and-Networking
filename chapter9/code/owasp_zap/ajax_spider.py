@@ -3,7 +3,9 @@ from zapv2 import ZAPv2
 
 target = 'http://testphp.vulnweb.com/'
 
-zap = ZAPv2()
+apiKey='<YOUR_API_KEY>'
+
+zap = ZAPv2(apikey=apiKey)
 
 print('Ajax Spider target {}'.format(target))
 scanID = zap.ajaxSpider.scan(target)

@@ -5,7 +5,7 @@ from gvm.transforms import EtreeTransform
 from gvm.xml import pretty_print
 
 # path to unix socket
-path = '/tmp/gvm/gvmd/gvmd.sock'
+path = '/var/lib/docker/volumes/greenbone-community-edition_gvmd_socket_vol/_data/gvmd.sock'
 connection = UnixSocketConnection(path=path)
 transform = EtreeTransform()
 

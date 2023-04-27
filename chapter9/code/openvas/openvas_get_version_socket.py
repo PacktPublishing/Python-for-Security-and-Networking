@@ -2,7 +2,7 @@ from gvm.connections import UnixSocketConnection
 from gvm.protocols.gmp import Gmp
 
 # path to unix socket
-path = '/tmp/gvm/gvmd/gvmd.sock'
+path = '/var/lib/docker/volumes/greenbone-community-edition_gvmd_socket_vol/_data/gvmd.sock'
 connection = UnixSocketConnection(path=path)
 
 # using the with statement to automatically connect and disconnect to gvmd

@@ -20,20 +20,20 @@ if __name__ == "__main__":
 	print("Public key:")
 	print(keys.publickey().export_key('PEM').decode(), end='\n\n')
 	with open("public.key",'wb') as file:
-    	file.write(keys.publickey().export_key())
-    print("Private Key:")
-    print(keys.export_key('PEM').decode())
-    with open("private.key",'wb') as file:
-    	file.write(keys.export_key('PEM'))
-    text2cipher = "text2cipher".encode("utf8")
-    hasher = SHA256.new(text2cipher)
-    signer = PKCS1_v1_5.new(keys)
-    signature = signer.sign(hasher)
-    verifier = PKCS1_v1_5.new(keys)
-    if verifier.verify(hasher, signature):
-    	print('The signature is valid!')
-    else:
-    	print('The message was signed with the wrong private key or modified')
+		file.write(keys.publickey().export_key())
+	print("Private Key:")
+	print(keys.export_key('PEM').decode())
+	with open("private.key",'wb') as file:
+		file.write(keys.export_key('PEM'))
+	text2cipher = "text2cipher".encode("utf8")
+	hasher = SHA256.new(text2cipher)
+	signer = PKCS1_v1_5.new(keys)
+	signature = signer.sign(hasher)
+	verifier = PKCS1_v1_5.new(keys)
+	if verifier.verify(hasher, signature):
+		print('The signature is valid!')
+	else:
+		print('The message was signed with the wrong private key or modified')
  
 	encrypted_data = encrypt(keys.publickey(),text2cipher)
 	print("Text encrypted:",encrypted_data)

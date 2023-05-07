@@ -1,6 +1,6 @@
 #!usr/bin/env python3
 
-from PyPDF2 import PdfFileReader, PdfFileWriter
+from PyPDF2 import PdfReader, PdfFileWriter
 import os, time, os.path, stat
 from PyPDF2.generic import NameObject, createStringObject
 
@@ -11,7 +11,7 @@ def get_metadata():
 			if ext in ['pdf']:
 				print("[--- Metadata : " + "%s ", (dirpath+os.path.sep+data))
 				print("------------------------------------------------------------------------------------")
-				pdfReader = PdfFileReader(open(dirpath+os.path.sep+data, 'rb'))
+				pdfReader = PdfReader(open(dirpath+os.path.sep+data, 'rb'))
 				info = pdfReader.getDocumentInfo()
 
 				for metaItem in info:

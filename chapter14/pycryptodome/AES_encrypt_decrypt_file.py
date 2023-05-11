@@ -2,6 +2,7 @@ from Crypto.Cipher import AES
 from Crypto.Hash import SHA256
 import os, random, struct
 from Crypto import Random
+import getpass
 
 def encrypt_file(key, filename):
     chunk_size = 64*1024
@@ -71,13 +72,13 @@ def main():
     
     if choice == 'E':
         filename = input('file to encrypt: ')
-        password = input('password: ')
+        password = getpass.getpass()
         encrypt_file(getKey(password.encode("utf8")), filename)
         print('done.')
 
     elif choice == 'D':
         filename = input('file to decrypt: ')
-        password = input('password: ')
+        password = getpass.getpass()
         decrypt_file(getKey(password.encode("utf8")), filename)
         print('done.')
 

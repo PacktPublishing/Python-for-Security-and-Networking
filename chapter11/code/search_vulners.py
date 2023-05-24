@@ -2,8 +2,8 @@ import vulners
 
 vulners_api = vulners.Vulners(api_key="API_KEY")
 
-dirtycow = vulners_api.find_all(query="openssl", limit=5)
-for i, val in enumerate(dirtycow):
+openssl = vulners_api.find_all(query="openssl", limit=5)
+for i, val in enumerate(openssl):
 	for key,value in val.items():
 		print(key,":",value)
 
